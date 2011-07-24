@@ -1,0 +1,159 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:Tests.cs" caret="558" fromTop="28" />
+      <File id="13F7EBA0-D666-4117-AEF8-0567E1D5E826/f:GivenWhenThenTestFixtureAttribute.cs" caret="209" fromTop="7" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:Addin.cs" caret="627" fromTop="22" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="1879" fromTop="49" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:Addin.cs" caret="624" fromTop="16" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="428" fromTop="10" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="556" fromTop="16" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:Tests.cs" caret="112" fromTop="4" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:Tests.cs" caret="621" fromTop="25" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="152" fromTop="4" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:Addin.cs" caret="370" fromTop="13" />
+      <File id="13F7EBA0-D666-4117-AEF8-0567E1D5E826/f:GivenWhenThenTestFixtureAttribute.cs" caret="258" fromTop="10" />
+      <File id="13F7EBA0-D666-4117-AEF8-0567E1D5E826/f:GivenWhenThenTestFixtureAttribute.cs" caret="389" fromTop="15" />
+      <File id="13F7EBA0-D666-4117-AEF8-0567E1D5E826/f:GivenWhenThenTestFixtureAttribute.cs" caret="521" fromTop="21" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:Tests.cs" caret="342" fromTop="15" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:Tests.cs" caret="449" fromTop="21" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:Tests.cs" caret="558" fromTop="28" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="1035" fromTop="17" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="2218" fromTop="37" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="923" fromTop="16" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="2238" fromTop="57" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="2238" fromTop="50" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="2238" fromTop="24" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="1893" fromTop="15" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="756" fromTop="6" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="1035" fromTop="35" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="1179" fromTop="34" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="1566" fromTop="42" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:GivenWhenThenSuiteBuilder.cs" caret="1074" fromTop="28" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="11" />
+      <Item value="interface" priority="0" />
+      <Item value="ITestCaseProvider`0" priority="0" />
+      <Item value="NUnitTestMethod`0" priority="0" />
+      <Item value="class" priority="5" />
+      <Item value="ISuiteBuilder`0" priority="1" />
+      <Item value="using" priority="6" />
+      <Item value="System" priority="2" />
+      <Item value="Linq" priority="1" />
+      <Item value="Expressions" priority="0" />
+      <Item value="Select`2" priority="0" />
+      <Item value="m" priority="1" />
+      <Item value="Where`1" priority="1" />
+      <Item value="Count`1" priority="1" />
+      <Item value="a" priority="4" />
+      <Item value="AccessViolationException`0" priority="0" />
+      <Item value="ICustomFormatter`0" priority="0" />
+      <Item value="void" priority="6" />
+      <Item value="Reflection" priority="0" />
+      <Item value="MemberInfo`0" priority="1" />
+      <Item value="new" priority="4" />
+      <Item value="Type`0" priority="1" />
+      <Item value="typeof" priority="1" />
+      <Item value="Class1`0" priority="0" />
+      <Item value="myClass1Type" priority="0" />
+      <Item value="object" priority="0" />
+      <Item value="method" priority="2" />
+      <Item value="foreach" priority="1" />
+      <Item value="string" priority="3" />
+      <Item value="attr" priority="1" />
+      <Item value="MethodInfo`0" priority="0" />
+      <Item value="return" priority="2" />
+      <Item value="private" priority="0" />
+      <Item value="attributeName" priority="0" />
+      <Item value="NUnitAddinAttribute" priority="0" />
+      <Item value="GivenWhenThenTestFixture" priority="0" />
+      <Item value="SetUp" priority="2" />
+      <Item value="Assert`0" priority="1" />
+      <Item value="TearDown" priority="0" />
+      <Item value="if" priority="1" />
+      <Item value="suite" priority="0" />
+      <Item value="GivenWhenThenForNUnit" priority="1" />
+      <Item value="NUnit" priority="3" />
+      <Item value="Core" priority="0" />
+      <Item value="NUnitAddinAttribute`0" priority="0" />
+      <Item value="Description" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="ExtensionType`0" priority="1" />
+      <Item value="true" priority="0" />
+      <Item value="TestSuite`0" priority="0" />
+      <Item value="NUnit.Framework" priority="0" />
+      <Item value="SetUpFixture" priority="0" />
+      <Item value="Contains`1" priority="0" />
+      <Item value="actions" priority="0" />
+      <Item value="Any`1" priority="0" />
+      <Item value="setUpMethods" priority="0" />
+      <Item value="SetUpFixture`0" priority="2" />
+      <Item value="override" priority="0" />
+      <Item value="FixtureType" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="reflectionService" priority="0" />
+      <Item value="reflectionProvider" priority="0" />
+      <Item value="fixtureType" priority="1" />
+      <Item value="internal" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.MethodInfo">
+      <Item value="Attributes" priority="2" />
+      <Item value="GetCustomAttributes`0" priority="4" />
+      <Item value="CallingConvention" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Contains`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="GetMethods`0" priority="0" />
+      <Item value="ToString`0" priority="2" />
+      <Item value="Attributes" priority="0" />
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="GetType`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="EndsWith`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GivenWhenThenForNUnit.GivenWhenThenSuiteTestBuilder">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="Pass`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NUnit.Core.Test">
+      <Item value="Fixture" priority="0" />
+      <Item value="FixtureType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Core.Extensibility.ExtensionType">
+      <Item value="Core" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.AttributeTargets">
+      <Item value="Method" priority="2" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

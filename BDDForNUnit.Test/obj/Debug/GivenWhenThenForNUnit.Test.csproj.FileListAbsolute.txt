@@ -1,0 +1,7 @@
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Test\bin\Debug\GivenWhenThenForNUnit.Test.dll
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Test\bin\Debug\GivenWhenThenForNUnit.Test.pdb
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Test\obj\Debug\GivenWhenThenForNUnit.Test.dll
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Test\obj\Debug\GivenWhenThenForNUnit.Test.pdb
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Test\bin\Debug\GivenWhenThenForNUnit.Attributes.dll
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Test\bin\Debug\GivenWhenThenForNUnit.Attributes.pdb

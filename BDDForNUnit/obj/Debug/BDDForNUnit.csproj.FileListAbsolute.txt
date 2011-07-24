@@ -1,0 +1,10 @@
+C:\dev\GivenWhenThenForNUnit\3rdParty\runtime\nunit\bin\addins\BDDForNUnit.dll
+C:\dev\GivenWhenThenForNUnit\3rdParty\runtime\nunit\bin\addins\BDDForNUnit.pdb
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit\obj\Debug\BDDForNUnit.dll
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit\obj\Debug\BDDForNUnit.pdb
+C:\dev\BDDForNUnit\3rdParty\runtime\nunit\bin\addins\BDDForNUnit.dll
+C:\dev\BDDForNUnit\3rdParty\runtime\nunit\bin\addins\BDDForNUnit.pdb
+C:\dev\BDDForNUnit\BDDForNUnit\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\BDDForNUnit\BDDForNUnit\obj\Debug\BDDForNUnit.dll
+C:\dev\BDDForNUnit\BDDForNUnit\obj\Debug\BDDForNUnit.pdb

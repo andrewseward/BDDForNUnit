@@ -1,0 +1,7 @@
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit\bin\Debug\GivenWhenThenForNUnit.dll
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit\bin\Debug\GivenWhenThenForNUnit.pdb
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit\obj\Debug\GivenWhenThenForNUnit.dll
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit\obj\Debug\GivenWhenThenForNUnit.pdb
+C:\dev\GivenWhenThenForNUnit\3rdParty\runtime\nunit\bin\addins\GivenWhenThenForNUnit.dll
+C:\dev\GivenWhenThenForNUnit\3rdParty\runtime\nunit\bin\addins\GivenWhenThenForNUnit.pdb

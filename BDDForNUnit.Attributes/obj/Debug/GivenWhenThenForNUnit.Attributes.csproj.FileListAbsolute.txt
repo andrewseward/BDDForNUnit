@@ -1,0 +1,5 @@
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Attributes\bin\Debug\GivenWhenThenForNUnit.Attributes.dll
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Attributes\bin\Debug\GivenWhenThenForNUnit.Attributes.pdb
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Attributes\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Attributes\obj\Debug\GivenWhenThenForNUnit.Attributes.dll
+C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Attributes\obj\Debug\GivenWhenThenForNUnit.Attributes.pdb
