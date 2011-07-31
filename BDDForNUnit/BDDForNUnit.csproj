@@ -71,12 +71,15 @@
   <ItemGroup>
     <Compile Include="Addin.cs" />
     <Compile Include="BDDSuiteBuilder.cs" />
+    <Compile Include="BDDTestSuite.cs" />
     <Compile Include="IReflectionProvider.cs" />
+    <Compile Include="ITypeManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionProvider.cs" />
+    <Compile Include="TypeManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GivenWhenThenForNUnit.Attributes\BDDForNUnit.Attributes.csproj">
+    <ProjectReference Include="..\BDDForNUnit.Attributes\BDDForNUnit.Attributes.csproj">
       <Project>{13F7EBA0-D666-4117-AEF8-0567E1D5E826}</Project>
       <Name>BDDForNUnit.Attributes</Name>
     </ProjectReference>

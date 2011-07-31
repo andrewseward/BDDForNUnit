@@ -5,7 +5,7 @@ using BDDForNUnit;
 using NUnit.Core.Extensibility;
 
 
-namespace GivenWhenThenForNUnit
+namespace BDDForNUnit
 {
     [NUnitAddin(Description = "Just testing", Name = "Andrewtest", Type = ExtensionType.Core)]
     public class Addin : IAddin 
@@ -16,7 +16,7 @@ namespace GivenWhenThenForNUnit
             if (builders == null)
                 return false;
 
-            builders.Install(new BDDSuiteBuilder()); //this implments both interfaces
+            builders.Install(new BDDSuiteBuilder(new ReflectionProvider())); //this implments both interfaces
             return true;
         }
     }

@@ -5,7 +5,7 @@ using System.Text;
 using BDDForNUnit.Attributes;
 using NUnit.Framework;
 
-namespace GivenWhenThenForNUnit.Test
+namespace BDDForNUnit.Test
 {
     [BDDTestFixture]
     public class Tests
