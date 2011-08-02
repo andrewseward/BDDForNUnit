@@ -73,13 +73,33 @@ namespace BDDForNUnit.Test
     {
         private Mock<ITypeManager> _mockTypeManager;
         private Type _fixtureType;
+        private Mock<IReflectionProvider> _mockReflectionProvider;
+        private NUnitTestMethod[] _givenMethods;
+        private NUnitTestMethod[] _whenMethods;
 
         [SetUp]
         public void GivenWhenDoOneTimeSetUp()
         {
+            _givenMethods = new[]
+                           {
+                               new NUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("GivenMethod1"))
+                           };
+            _whenMethods = new[]
+                           {
+                               new NUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("WhenMethod1"))
+                           };
             _mockTypeManager = new Mock<ITypeManager>();
+            _mockTypeManager
+                .Setup(tm => tm.GetNUnitTestMethodsWithAttribute(It.IsAny<Type>(), typeof(GivenAttribute)))
+                .Returns(_givenMethods);
+            _mockTypeManager
+                .Setup(tm => tm.GetNUnitTestMethodsWithAttribute(It.IsAny<Type>(), typeof(WhenAttribute)))
+                .Returns(_whenMethods);
+
             _fixtureType = typeof (BDDTestFixtureTestClass);
-            var bddTestSuite = new BDDTestSuite(new Mock<IReflectionProvider>().Object, _mockTypeManager.Object,
+            _mockReflectionProvider = new Mock<IReflectionProvider>();
+
+            var bddTestSuite = new BDDTestSuite(_mockReflectionProvider.Object, _mockTypeManager.Object,
                                                 _fixtureType);
 
             bddTestSuite.RunDoOneTimeSetUp(new TestResult(new TestName()));
@@ -89,6 +109,24 @@ namespace BDDForNUnit.Test
         public void ThenGivenMethodsAreRetrieved()
         {
             _mockTypeManager.Verify(tm=>tm.GetNUnitTestMethodsWithAttribute(_fixtureType, typeof(GivenAttribute)));
+        }
+
+        [Test]
+        public void ThenGivenMethodsAreInvoked()
+        {
+            _mockReflectionProvider.Verify(rp => rp.InvokeMethod(_givenMethods[0].Method, _givenMethods[0].Fixture));
+        }
+
+        [Test]
+        public void ThenWhenMethodsAreRetrieved()
+        {
+            _mockTypeManager.Verify(tm => tm.GetNUnitTestMethodsWithAttribute(_fixtureType, typeof(WhenAttribute)));
+        }
+
+        [Test]
+        public void ThenWhenMethodsAreInvoked()
+        {
+            _mockReflectionProvider.Verify(rp => rp.InvokeMethod(_whenMethods[0].Method, _whenMethods[0].Fixture));
         }
     }
 }

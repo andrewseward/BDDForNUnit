@@ -9,50 +9,52 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:Addin.cs" caret="651" fromTop="23" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:IReflectionProvider.cs" caret="176" fromTop="8" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:ReflectionProvider.cs" caret="265" fromTop="10" />
       <File id="13F7EBA0-D666-4117-AEF8-0567E1D5E826/f:BDDTestFixtureAttribute.cs" caret="558" fromTop="22" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDSuiteBuilder.cs" caret="726" fromTop="23" />
       <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:ITypeManager.cs" caret="200" fromTop="7" />
       <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:TypeManager.cs" caret="758" fromTop="19" />
       <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:TypeManagerTests.cs" caret="792" fromTop="22" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDSuiteBuilderTests.cs" caret="123" fromTop="6" />
       <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/d:Properties/f:AssemblyInfo.cs" caret="1499" fromTop="36" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1647" fromTop="51" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="1588" fromTop="8" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestFixtureTestClass.cs" caret="550" fromTop="34" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:IReflectionProvider.cs" caret="280" fromTop="9" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:ReflectionProvider.cs" caret="602" fromTop="20" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="2873" fromTop="10" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1693" fromTop="35" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDSuiteBuilderTests.cs" caret="1698" fromTop="53" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDSuiteBuilder.cs" caret="0" fromTop="0" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDAddin.cs" caret="589" fromTop="18" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDAddinTests.cs" caret="1981" fromTop="53" />
     </RecentFiles>
     <RecentEdits>
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="1439" fromTop="26" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="1733" fromTop="33" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:ITypeManager.cs" caret="179" fromTop="7" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:TypeManager.cs" caret="298" fromTop="8" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="626" fromTop="19" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDSuiteBuilderTests.cs" caret="428" fromTop="26" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDSuiteBuilderTests.cs" caret="402" fromTop="23" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="1414" fromTop="34" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="909" fromTop="25" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1111" fromTop="31" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDSuiteBuilderTests.cs" caret="26" fromTop="1" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="13" fromTop="0" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:TypeManagerTests.cs" caret="812" fromTop="22" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:TypeManagerTests.cs" caret="594" fromTop="16" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:TypeManager.cs" caret="309" fromTop="11" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:TypeManager.cs" caret="309" fromTop="19" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:TypeManager.cs" caret="94" fromTop="3" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:TypeManager.cs" caret="309" fromTop="11" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:TypeManager.cs" caret="758" fromTop="19" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:TypeManagerTests.cs" caret="792" fromTop="22" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1414" fromTop="43" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/d:Properties/f:AssemblyInfo.cs" caret="1499" fromTop="36" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1799" fromTop="47" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="287" fromTop="7" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="287" fromTop="2" />
       <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="2439" fromTop="44" />
       <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="892" fromTop="27" />
-      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1647" fromTop="51" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="3002" fromTop="48" />
-      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="3288" fromTop="58" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1574" fromTop="40" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1113" fromTop="21" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="3843" fromTop="24" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDSuiteBuilderTests.cs" caret="226" fromTop="9" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDSuiteBuilderTests.cs" caret="95" fromTop="6" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:IReflectionProvider.cs" caret="291" fromTop="9" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1693" fromTop="44" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:ReflectionProvider.cs" caret="140" fromTop="6" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:ReflectionProvider.cs" caret="39" fromTop="1" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="3102" fromTop="17" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="2782" fromTop="9" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="3703" fromTop="28" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="3652" fromTop="27" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="4569" fromTop="49" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDTestSuiteTests.cs" caret="4911" fromTop="57" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1886" fromTop="44" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDTestSuite.cs" caret="1693" fromTop="35" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:ReflectionProvider.cs" caret="235" fromTop="10" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:ReflectionProvider.cs" caret="457" fromTop="15" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:ReflectionProvider.cs" caret="602" fromTop="20" />
+      <File id="FB3EA0A3-137A-4969-88AD-F3EA0853F714/f:BDDAddin.cs" caret="319" fromTop="10" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDSuiteBuilderTests.cs" caret="1698" fromTop="53" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDAddinTests.cs" caret="359" fromTop="13" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDAddinTests.cs" caret="235" fromTop="7" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDAddinTests.cs" caret="1602" fromTop="44" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDAddinTests.cs" caret="1915" fromTop="49" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDAddinTests.cs" caret="1312" fromTop="37" />
+      <File id="0E12D365-FF45-453D-B5B5-2D5658003E61/f:BDDAddinTests.cs" caret="1981" fromTop="53" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -70,32 +72,32 @@
       <Item value="ctor" priority="1" />
       <Item value="base" priority="0" />
       <Item value="IReflectionProvider`0" priority="2" />
-      <Item value="new" priority="22" />
+      <Item value="new" priority="27" />
       <Item value="Mock&lt;IReflectionProvider&gt;" priority="0" />
       <Item value="mockReflectionProvider" priority="1" />
-      <Item value="rp" priority="3" />
-      <Item value="It`0" priority="6" />
+      <Item value="rp" priority="5" />
+      <Item value="It`0" priority="10" />
       <Item value="typeof" priority="5" />
       <Item value="BDDTestFixtureTestClass`0" priority="2" />
-      <Item value="public" priority="14" />
-      <Item value="void" priority="12" />
-      <Item value="ReflectionProvider" priority="1" />
-      <Item value="Assert`0" priority="3" />
-      <Item value="Is`0" priority="3" />
+      <Item value="public" priority="20" />
+      <Item value="void" priority="18" />
+      <Item value="ReflectionProvider" priority="2" />
+      <Item value="Assert`0" priority="4" />
+      <Item value="Is`0" priority="4" />
       <Item value="BDDTestSuite`0" priority="2" />
       <Item value="reflectionProvider" priority="1" />
       <Item value="Type`0" priority="0" />
       <Item value="this" priority="1" />
-      <Item value="fixtureType" priority="2" />
-      <Item value="_reflectionProvider" priority="0" />
-      <Item value="TestFixture" priority="2" />
-      <Item value="class" priority="2" />
-      <Item value="var" priority="0" />
+      <Item value="fixtureType" priority="3" />
+      <Item value="_reflectionProvider" priority="1" />
+      <Item value="TestFixture" priority="3" />
+      <Item value="class" priority="3" />
+      <Item value="var" priority="1" />
       <Item value="NUnitTestMethod`0" priority="0" />
       <Item value="typeManager" priority="0" />
-      <Item value="Mock`0" priority="1" />
+      <Item value="Mock`0" priority="3" />
       <Item value="ITypeManager`0" priority="3" />
-      <Item value="tm" priority="2" />
+      <Item value="tm" priority="3" />
       <Item value="SetUpFixture" priority="1" />
       <Item value="mockTypeManager" priority="1" />
       <Item value="Mock&lt;ITypeManager&gt;" priority="0" />
@@ -103,7 +105,7 @@
       <Item value="BDDTestSuite" priority="0" />
       <Item value="_mockTypeManager" priority="2" />
       <Item value="TypeManager" priority="0" />
-      <Item value="_mockReflectionProvider" priority="1" />
+      <Item value="_mockReflectionProvider" priority="2" />
       <Item value="_fixtureType" priority="3" />
       <Item value="object" priority="0" />
       <Item value="_bddTestSuite" priority="2" />
@@ -113,11 +115,11 @@
       <Item value="CollectionAssert`0" priority="0" />
       <Item value="foreach" priority="0" />
       <Item value="Add`0" priority="0" />
-      <Item value="nUnitTestMethod" priority="0" />
+      <Item value="nUnitTestMethod" priority="2" />
       <Item value="_returnedMethods" priority="2" />
       <Item value="nUnitTestMethods" priority="2" />
       <Item value="List&lt;NUnitTestMethod&gt;" priority="0" />
-      <Item value="return" priority="1" />
+      <Item value="return" priority="2" />
       <Item value="using" priority="0" />
       <Item value="System" priority="0" />
       <Item value="Linq" priority="0" />
@@ -135,17 +137,33 @@
       <Item value="SetUpFixture`0" priority="0" />
       <Item value="MTAThreadAttribute`0" priority="0" />
       <Item value="GivenAttribute`0" priority="0" />
+      <Item value="_methods" priority="1" />
+      <Item value="_whenMethods" priority="0" />
+      <Item value="Reflect`0" priority="1" />
+      <Item value="member" priority="0" />
+      <Item value="attrName" priority="0" />
+      <Item value="inherit" priority="0" />
+      <Item value="method" priority="0" />
+      <Item value="fixture" priority="0" />
+      <Item value="eh" priority="1" />
+      <Item value="BDDAddin`0" priority="0" />
+      <Item value="bddAddin" priority="0" />
+      <Item value="mockExtensionHost" priority="1" />
+      <Item value="Mock&lt;IExtensionHost&gt;" priority="0" />
+      <Item value="_result" priority="0" />
+      <Item value="IExtensionPoint`0" priority="0" />
+      <Item value="Mock&lt;IExtensionPoint&gt;" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Mock`1">
-      <Item value="Object" priority="4" />
-      <Item value="Setup`1" priority="2" />
-      <Item value="Verify`1" priority="2" />
+      <Item value="Object" priority="6" />
+      <Item value="Setup`1" priority="5" />
+      <Item value="Verify`1" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Moq.It">
-      <Item value="IsAny`1" priority="6" />
+      <Item value="IsAny`1" priority="10" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
-      <Item value="Returns`16" priority="2" />
+      <Item value="Returns`16" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:BDDForNUnit.BDDSuiteBuilder">
       <Item value="CanBuildFrom`0" priority="0" />
@@ -154,14 +172,16 @@
       <Item value="HasAttribute`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
-      <Item value="That`0" priority="3" />
+      <Item value="That`0" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Is">
       <Item value="InstanceOf`1" priority="0" />
       <Item value="EqualTo`0" priority="2" />
+      <Item value="False" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:BDDForNUnit.IReflectionProvider">
       <Item value="Construct`0" priority="1" />
+      <Item value="InvokeMethod`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:BDDForNUnit.BDDTestSuite">
       <Item value="Fixture" priority="0" />
@@ -170,7 +190,7 @@
       <Item value="FixtureType" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:BDDForNUnit.ITypeManager">
-      <Item value="GetNUnitTestMethodsWithAttribute`0" priority="2" />
+      <Item value="GetNUnitTestMethodsWithAttribute`0" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Core.NUnitTestMethod">
       <Item value="ContextDictionary`0" priority="0" />
@@ -194,6 +214,24 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
       <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NUnit.Core.NUnitTestMethod">
+      <Item value="Method" priority="1" />
+      <Item value="Fixture" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Core.Reflect">
+      <Item value="Construct`0" priority="0" />
+      <Item value="HasAttribute`0" priority="0" />
+      <Item value="InvokeMethod`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NUnit.Core.Extensibility.IExtensionHost">
+      <Item value="GetExtensionPoint`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDDForNUnit.BDDAddin">
+      <Item value="Install`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NUnit.Core.Extensibility.IExtensionPoint">
+      <Item value="Install`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

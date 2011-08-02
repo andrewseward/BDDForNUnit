@@ -69,7 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addin.cs" />
+    <Compile Include="BDDAddin.cs" />
     <Compile Include="BDDSuiteBuilder.cs" />
     <Compile Include="BDDTestSuite.cs" />
     <Compile Include="IReflectionProvider.cs" />

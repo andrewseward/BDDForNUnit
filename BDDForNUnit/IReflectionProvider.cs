@@ -7,5 +7,6 @@ namespace BDDForNUnit
     {
         object Construct(Type fixtureType);
         bool HasAttribute(ICustomAttributeProvider member, string attrName, bool inherit);
+        void InvokeMethod(MethodInfo method, object fixture);
     }
 }

@@ -49,21 +49,20 @@ namespace BDDForNUnit
         {
             base.DoOneTimeSetUp(suiteResult);
 
-            /*var methods = _typeManager.GetNUnitTestMethodsWithAttribute(FixtureType, typeof(ThenAttribute));
+            InvokeMethodsWithAttribute(typeof(GivenAttribute));
+
+            InvokeMethodsWithAttribute(typeof(WhenAttribute));
+
+        }
+
+        private void InvokeMethodsWithAttribute(Type attributeType)
+        {
+            var methods = _typeManager.GetNUnitTestMethodsWithAttribute(FixtureType, attributeType);
 
             foreach (var nUnitTestMethod in methods)
             {
-                Add(nUnitTestMethod);
-            }*/
-
-            //run given and when somehow
-            //FixtureType.get
-
-            /*
-             * HERE'S HOW!!
-             * object[] arguments = _arguments ?? new object[] {null};
-    TestSuite testSuite = (TestSuite) this.Parent.Parent;
-    Reflect.InvokeMethod(this.Method, testSuite.Fixture, arguments); //Execute Test */
+                _reflectionProvider.InvokeMethod(nUnitTestMethod.Method, nUnitTestMethod.Fixture);
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Reflection;
-using BDDForNUnit;
+using NUnit.Core;
 
 namespace BDDForNUnit
 {
@@ -8,12 +8,17 @@ namespace BDDForNUnit
     {
         public object Construct(Type fixtureType)
         {
-            throw new NotImplementedException();
+            return Reflect.Construct(fixtureType);
         }
 
         public bool HasAttribute(ICustomAttributeProvider member, string attrName, bool inherit)
         {
-            throw new NotImplementedException();
+            return Reflect.HasAttribute(member, attrName, inherit);
+        }
+
+        public void InvokeMethod(MethodInfo method, object fixture)
+        {
+            Reflect.InvokeMethod(method, fixture);
         }
     }
 }

@@ -1,31 +1,10 @@
 ﻿
 using System.Reflection;
-using BDDForNUnit.Attributes;
 using Moq;
 using NUnit.Framework;
 
 namespace BDDForNUnit.Test
 {
-    [BDDTestFixture]
-    public class BDDTestFixtureTestClass
-    {
-        [Then]
-        public void TestMethod1()
-        {
-        }
-
-        [Then]
-        public void TestMethod2()
-        {
-        }
-
-        [Test]
-        public void TestMethodNotThen()
-        {
-        }
-
-    }
-
     [TestFixture]
     public class BDDSuiteBuilderTests_CanBuildFrom
     {
