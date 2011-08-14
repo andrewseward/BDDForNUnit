@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="BDDAddin.cs" />
     <Compile Include="BDDSuiteBuilder.cs" />
+    <Compile Include="BDDTestCaseBuilder.cs" />
     <Compile Include="BDDTestSuite.cs" />
     <Compile Include="IReflectionProvider.cs" />
     <Compile Include="ITypeManager.cs" />

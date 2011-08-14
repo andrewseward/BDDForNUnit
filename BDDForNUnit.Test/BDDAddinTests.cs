@@ -37,14 +37,17 @@ namespace BDDForNUnit.Test
     {
         private Mock<IExtensionHost> _mockExtensionHost;
         private bool _result;
-        private Mock<IExtensionPoint> _mockExtensionPoint;
+        private Mock<IExtensionPoint> _mockSuiteBuildersExtensionPoint;
+        private Mock<IExtensionPoint> _mockTestCaseBuildersExtensionPoint;
 
         [SetUp]
         public void GivenBDDAddinWithExtensionPointFromExtensionHostWhenInstalled()
         {
-            _mockExtensionPoint = new Mock<IExtensionPoint>();
             _mockExtensionHost = new Mock<IExtensionHost>();
-            _mockExtensionHost.Setup(eh => eh.GetExtensionPoint(It.IsAny<string>())).Returns(_mockExtensionPoint.Object);
+            _mockSuiteBuildersExtensionPoint = new Mock<IExtensionPoint>();
+            _mockExtensionHost.Setup(eh => eh.GetExtensionPoint("SuiteBuilders")).Returns(_mockSuiteBuildersExtensionPoint.Object);
+            _mockTestCaseBuildersExtensionPoint = new Mock<IExtensionPoint>();
+            _mockExtensionHost.Setup(eh => eh.GetExtensionPoint("TestCaseBuilders")).Returns(_mockTestCaseBuildersExtensionPoint.Object);
             var bddAddin = new BDDAddin();
             _result = bddAddin.Install(_mockExtensionHost.Object);
         }
@@ -52,7 +55,13 @@ namespace BDDForNUnit.Test
         [Test]
         public void ThenBDDSuiteBuilderIsInstalledAgainstExtensionPoint()
         {
-            _mockExtensionPoint.Verify(eh => eh.Install(It.IsAny<BDDSuiteBuilder>()));
+            _mockSuiteBuildersExtensionPoint.Verify(eh => eh.Install(It.IsAny<BDDSuiteBuilder>()));
+        }
+
+        [Test]
+        public void ThenBDDTestCaseBuilderIsInstalledAgainstExtensionPoint()
+        {
+            _mockTestCaseBuildersExtensionPoint.Verify(eh => eh.Install(It.IsAny<BDDTestCaseBuilder>()));
         }
 
         [Test]

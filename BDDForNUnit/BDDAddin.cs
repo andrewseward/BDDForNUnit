@@ -12,11 +12,14 @@ namespace BDDForNUnit
     {
         public bool Install(IExtensionHost host)
         {
-            var builders = host.GetExtensionPoint("SuiteBuilders");
-            if (builders == null)
+            var suiteBuildersExtensionPoint = host.GetExtensionPoint("SuiteBuilders");
+            if (suiteBuildersExtensionPoint == null)
                 return false;
 
-            builders.Install(new BDDSuiteBuilder(new ReflectionProvider()));
+            suiteBuildersExtensionPoint.Install(new BDDSuiteBuilder(new ReflectionProvider()));
+
+            var testCaseBuildersExtensionPoint = host.GetExtensionPoint("TestCaseBuilders");
+            testCaseBuildersExtensionPoint.Install(new BDDTestCaseBuilder(new ReflectionProvider()));
             return true;
         }
     }

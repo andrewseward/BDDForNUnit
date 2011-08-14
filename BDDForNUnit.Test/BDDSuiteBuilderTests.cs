@@ -11,6 +11,7 @@ namespace BDDForNUnit.Test
     public class BDDSuiteBuilderTests_CanBuildFrom
     {
         private Mock<IReflectionProvider> _mockReflectionProvider;
+        private bool _returnedValue;
 
         [SetUp]
         public void GivenClassWithBDDTestFixtureAttributeWhenCanBuildFromIsCalled()
@@ -24,16 +25,23 @@ namespace BDDForNUnit.Test
 
             var bddSuiteBuilder = new BDDSuiteBuilder(_mockReflectionProvider.Object);
 
-            bddSuiteBuilder.CanBuildFrom(typeof (BDDTestFixtureTestClass));
+            _returnedValue = bddSuiteBuilder.CanBuildFrom(typeof (BDDTestFixtureTestClass));
         }
 
         [Test]
-        public void ThenCanBuildFromIsChecked()
+        public void ThenHasAttributeIsChecked()
         {
             _mockReflectionProvider.Verify(rp => rp.HasAttribute(typeof(BDDTestFixtureTestClass), typeof(BDDTestFixtureAttribute), false));
         }
+
+        [Test]
+        public void ThenTrueIsReturned()
+        {
+            Assert.That(_returnedValue, Is.True);   
+        }
     }
 
+    
     [TestFixture]
     public class BDDSuiteBuilderTests_BuildFrom
     {
