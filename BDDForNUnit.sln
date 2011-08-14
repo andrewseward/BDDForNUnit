@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDDForNUnit.Attributes", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDDForNUnit.Test", "BDDForNUnit.Test\BDDForNUnit.Test.csproj", "{0E12D365-FF45-453D-B5B5-2D5658003E61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDDForNUnit.Example", "BDDForNUnit.Example\BDDForNUnit.Example.csproj", "{D9AD20D9-8BE3-4BDD-91DE-00D164A434E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{0E12D365-FF45-453D-B5B5-2D5658003E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E12D365-FF45-453D-B5B5-2D5658003E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E12D365-FF45-453D-B5B5-2D5658003E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9AD20D9-8BE3-4BDD-91DE-00D164A434E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9AD20D9-8BE3-4BDD-91DE-00D164A434E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9AD20D9-8BE3-4BDD-91DE-00D164A434E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9AD20D9-8BE3-4BDD-91DE-00D164A434E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

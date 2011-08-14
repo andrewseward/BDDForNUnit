@@ -5,14 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0E12D365-FF45-453D-B5B5-2D5658003E61}</ProjectGuid>
+    <ProjectGuid>{D9AD20D9-8BE3-4BDD-91DE-00D164A434E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BDDForNUnit.Test</RootNamespace>
-    <AssemblyName>BDDForNUnit.Test</AssemblyName>
+    <RootNamespace>BDDForNUnit.Example</RootNamespace>
+    <AssemblyName>BDDForNUnit.Example</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,18 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Moq">
-      <HintPath>..\3rdParty\test\Moq.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.core">
-      <HintPath>..\3rdParty\runtime\nunit\bin\lib\nunit.core.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.core.interfaces">
-      <HintPath>..\3rdParty\runtime\nunit\bin\lib\nunit.core.interfaces.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework, Version=2.5.9.10348, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\3rdParty\runtime\nunit\bin\nunit.framework.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,23 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BDDAddinTests.cs" />
-    <Compile Include="BDDSuiteBuilderTests.cs" />
-    <Compile Include="BDDTestFixtureTestClass.cs" />
-    <Compile Include="BDDTestSuiteTests.cs" />
+    <Compile Include="ExampleTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReflectionProviderTests.cs" />
-    <Compile Include="Tests.cs" />
-    <Compile Include="TypeManagerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BDDForNUnit.Attributes\BDDForNUnit.Attributes.csproj">
       <Project>{13F7EBA0-D666-4117-AEF8-0567E1D5E826}</Project>
       <Name>BDDForNUnit.Attributes</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BDDForNUnit\BDDForNUnit.csproj">
-      <Project>{FB3EA0A3-137A-4969-88AD-F3EA0853F714}</Project>
-      <Name>BDDForNUnit</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

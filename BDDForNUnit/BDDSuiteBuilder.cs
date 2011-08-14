@@ -1,5 +1,6 @@
 ﻿using System;
 using BDDForNUnit;
+using BDDForNUnit.Attributes;
 using NUnit.Core;
 using NUnit.Core.Extensibility;
 
@@ -16,7 +17,8 @@ namespace BDDForNUnit
 
         public bool CanBuildFrom(Type type)
         {
-            return _reflectionProvider.HasAttribute(type, "GivenWhenThenForNUnit.Attributes.BDDTestFixtureAttribute", false);
+            var canBuildFrom = _reflectionProvider.HasAttribute(type, typeof(BDDTestFixtureAttribute), false);
+            return canBuildFrom;
         }
 
         public Test BuildFrom(Type type)

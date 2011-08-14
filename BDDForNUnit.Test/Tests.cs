@@ -32,4 +32,9 @@ namespace BDDForNUnit.Test
 
         }
     }
+
+    [TestFixture]
+    public class StandardTests
+    {
+    }
 }

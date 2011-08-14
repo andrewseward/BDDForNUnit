@@ -1,5 +1,7 @@
 ﻿
+using System;
 using System.Reflection;
+using BDDForNUnit.Attributes;
 using Moq;
 using NUnit.Framework;
 
@@ -16,7 +18,7 @@ namespace BDDForNUnit.Test
             _mockReflectionProvider = new Mock<IReflectionProvider>();
 
             _mockReflectionProvider.Setup(
-                rp => rp.HasAttribute(It.IsAny<ICustomAttributeProvider>(), It.IsAny<string>(), It.IsAny<bool>())).
+                rp => rp.HasAttribute(It.IsAny<ICustomAttributeProvider>(), It.IsAny<Type>(), It.IsAny<bool>())).
                 Returns(true);
 
 
@@ -28,7 +30,7 @@ namespace BDDForNUnit.Test
         [Test]
         public void ThenCanBuildFromIsChecked()
         {
-            _mockReflectionProvider.Verify(rp => rp.HasAttribute(typeof(BDDTestFixtureTestClass), "GivenWhenThenForNUnit.Attributes.BDDTestFixtureAttribute", false));
+            _mockReflectionProvider.Verify(rp => rp.HasAttribute(typeof(BDDTestFixtureTestClass), typeof(BDDTestFixtureAttribute), false));
         }
     }
 

@@ -16,7 +16,7 @@ namespace BDDForNUnit
             if (builders == null)
                 return false;
 
-            builders.Install(new BDDSuiteBuilder(new ReflectionProvider())); //this implments both interfaces
+            builders.Install(new BDDSuiteBuilder(new ReflectionProvider()));
             return true;
         }
     }

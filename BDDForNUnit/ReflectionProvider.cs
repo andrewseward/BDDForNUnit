@@ -11,10 +11,12 @@ namespace BDDForNUnit
             return Reflect.Construct(fixtureType);
         }
 
-        public bool HasAttribute(ICustomAttributeProvider member, string attrName, bool inherit)
+        public bool HasAttribute(ICustomAttributeProvider member, Type attributeType, bool inherit)
         {
-            return Reflect.HasAttribute(member, attrName, inherit);
+            var attributes = member.GetCustomAttributes(attributeType, inherit);
+            return attributes.Length > 0;
         }
+        
 
         public void InvokeMethod(MethodInfo method, object fixture)
         {

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\dev\BDDForNUnit\BDDForNUnit.Test\bin\Debug\BDDForNUnit.Test.dll" total="17" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-08-04" time="01:30:18">
+  <environment nunit-version="2.6.0.11089" clr-version="2.0.50727.4961" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\dev\BDDForNUnit\3rdParty\runtime\nunit\bin" machine-name="THINKPAD" user="Mike" user-domain="Thinkpad" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\dev\BDDForNUnit\BDDForNUnit.Test\bin\Debug\BDDForNUnit.Test.dll" executed="True" result="Success" success="True" time="2.190" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="BDDForNUnit" executed="True" result="Success" success="True" time="2.172" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="2.172" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="BDDAddinTests_ExtensionHostReturnsExtensionPoint" executed="True" result="Success" success="True" time="1.796" asserts="0">
+                <results>
+                  <test-case name="BDDForNUnit.Test.BDDAddinTests_ExtensionHostReturnsExtensionPoint.ReturnsTrue" executed="True" result="Success" success="True" time="1.541" asserts="1" />
+                  <test-case name="BDDForNUnit.Test.BDDAddinTests_ExtensionHostReturnsExtensionPoint.ThenBDDSuiteBuilderIsInstalledAgainstExtensionPoint" executed="True" result="Success" success="True" time="0.201" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="BDDAddinTests_ExtensionHostReturnsNull" executed="True" result="Success" success="True" time="0.027" asserts="0">
+                <results>
+                  <test-case name="BDDForNUnit.Test.BDDAddinTests_ExtensionHostReturnsNull.ReturnsFalse" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+                  <test-case name="BDDForNUnit.Test.BDDAddinTests_ExtensionHostReturnsNull.ThenExtensionPointIsRetrieved" executed="True" result="Success" success="True" time="0.017" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="BDDSuiteBuilderTests_BuildFrom" executed="True" result="Success" success="True" time="0.034" asserts="0">
+                <results>
+                  <test-case name="BDDForNUnit.Test.BDDSuiteBuilderTests_BuildFrom.ThenBDDTestFixtureIsReturned" executed="True" result="Success" success="True" time="0.032" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="BDDSuiteBuilderTests_CanBuildFrom" executed="True" result="Success" success="True" time="0.044" asserts="0">
+                <results>
+                  <test-case name="BDDForNUnit.Test.BDDSuiteBuilderTests_CanBuildFrom.ThenCanBuildFromIsChecked" executed="True" result="Success" success="True" time="0.043" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="BDDTestFixtureTestClass" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                <results>
+                  <test-case name="BDDForNUnit.Test.BDDTestFixtureTestClass.TestMethodNotThen" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="BDDTestSuiteTests" executed="True" result="Success" success="True" time="0.130" asserts="0">
+                <results>
+                  <test-case name="BDDForNUnit.Test.BDDTestSuiteTests.FixtureTypeIsStored" executed="True" result="Success" success="True" time="0.033" asserts="1" />
+                  <test-case name="BDDForNUnit.Test.BDDTestSuiteTests.ThenConstructedFixtureIsStoredAgainstTestSuite" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+                  <test-case name="BDDForNUnit.Test.BDDTestSuiteTests.ThenFixtureIsConstructed" executed="True" result="Success" success="True" time="0.054" asserts="0" />
+                  <test-case name="BDDForNUnit.Test.BDDTestSuiteTests.ThenMethodsWithThenAttributesAreRetrieved" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                  <test-case name="BDDForNUnit.Test.BDDTestSuiteTests.ThenTestMethodsAreAdded" executed="True" result="Success" success="True" time="0.010" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="BDDTestSuiteTests_DoOneTimeSetUp" executed="True" result="Success" success="True" time="0.082" asserts="0">
+                <results>
+                  <test-case name="BDDForNUnit.Test.BDDTestSuiteTests_DoOneTimeSetUp.ThenGivenMethodsAreInvoked" executed="True" result="Success" success="True" time="0.041" asserts="0" />
+                  <test-case name="BDDForNUnit.Test.BDDTestSuiteTests_DoOneTimeSetUp.ThenGivenMethodsAreRetrieved" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                  <test-case name="BDDForNUnit.Test.BDDTestSuiteTests_DoOneTimeSetUp.ThenWhenMethodsAreInvoked" executed="True" result="Success" success="True" time="0.010" asserts="0" />
+                  <test-case name="BDDForNUnit.Test.BDDTestSuiteTests_DoOneTimeSetUp.ThenWhenMethodsAreRetrieved" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TypeManagerTests" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                <results>
+                  <test-case name="BDDForNUnit.Test.TypeManagerTests.ThenNUnitTestMethodsWithAttributesOfTypeThenAreReturned" executed="True" result="Success" success="True" time="0.010" asserts="3" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
