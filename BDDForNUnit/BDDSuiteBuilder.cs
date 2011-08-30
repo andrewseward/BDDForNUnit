@@ -25,6 +25,7 @@ namespace BDDForNUnit
         {
             return new BDDTestSuite(_reflectionProvider, new TypeManager(), type);
         }
+
     }
     //http://www.simple-talk.com/content/print.aspx?article=484
 }

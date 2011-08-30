@@ -61,7 +61,7 @@ namespace BDDForNUnit
 
             foreach (var nUnitTestMethod in methods)
             {
-                _reflectionProvider.InvokeMethod(nUnitTestMethod.Method, nUnitTestMethod.Fixture);
+                _reflectionProvider.InvokeMethod(nUnitTestMethod.Method, Fixture);
             }
         }
     }

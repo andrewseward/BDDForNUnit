@@ -76,6 +76,7 @@ namespace BDDForNUnit.Test
         private Mock<IReflectionProvider> _mockReflectionProvider;
         private NUnitTestMethod[] _givenMethods;
         private NUnitTestMethod[] _whenMethods;
+        private object _fixture;
 
         [SetUp]
         public void GivenWhenDoOneTimeSetUp()
@@ -101,7 +102,8 @@ namespace BDDForNUnit.Test
 
             var bddTestSuite = new BDDTestSuite(_mockReflectionProvider.Object, _mockTypeManager.Object,
                                                 _fixtureType);
-
+            _fixture = new object();
+            bddTestSuite.Fixture = _fixture;
             bddTestSuite.RunDoOneTimeSetUp(new TestResult(new TestName()));
         }
 
@@ -114,7 +116,7 @@ namespace BDDForNUnit.Test
         [Test]
         public void ThenGivenMethodsAreInvoked()
         {
-            _mockReflectionProvider.Verify(rp => rp.InvokeMethod(_givenMethods[0].Method, _givenMethods[0].Fixture));
+            _mockReflectionProvider.Verify(rp => rp.InvokeMethod(_givenMethods[0].Method, _fixture));
         }
 
         [Test]
@@ -126,7 +128,7 @@ namespace BDDForNUnit.Test
         [Test]
         public void ThenWhenMethodsAreInvoked()
         {
-            _mockReflectionProvider.Verify(rp => rp.InvokeMethod(_whenMethods[0].Method, _whenMethods[0].Fixture));
+            _mockReflectionProvider.Verify(rp => rp.InvokeMethod(_whenMethods[0].Method, _fixture));
         }
     }
 }

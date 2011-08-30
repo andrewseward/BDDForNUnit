@@ -9,10 +9,10 @@
     <Node UniqueName="[0-1044]BDDForNUnit.Test" Expanded="true" />
     <Node UniqueName="[0-1006]BDDForNUnit.Test.BDDAddinTests_ExtensionHostReturnsExtensionPoint" Expanded="true" />
     <Node UniqueName="[0-1003]BDDForNUnit.Test.BDDAddinTests_ExtensionHostReturnsNull" Expanded="true" />
-    <Node UniqueName="[0-1033]BDDForNUnit.Test.BDDSuiteBuilderTests_BuildFrom" Expanded="true" />
-    <Node UniqueName="[0-1030]BDDForNUnit.Test.BDDSuiteBuilderTests_CanBuildFrom" Expanded="true" />
-    <Node UniqueName="[0-1040]BDDForNUnit.Test.BDDTestCaseBuilderTests_BuildFrom" Expanded="true" />
-    <Node UniqueName="[0-1037]BDDForNUnit.Test.BDDTestCaseBuilderTests_CanBuildFromMethodWithThenAttribute" Expanded="true" />
+    <Node UniqueName="[0-1038]BDDForNUnit.Test.BDDSuiteBuilderTests_BuildFrom" Expanded="true" />
+    <Node UniqueName="[0-1035]BDDForNUnit.Test.BDDSuiteBuilderTests_CanBuildFrom" Expanded="true" />
+    <Node UniqueName="[0-1033]BDDForNUnit.Test.BDDTestCaseBuilderTests_BuildFrom" Expanded="true" />
+    <Node UniqueName="[0-1030]BDDForNUnit.Test.BDDTestCaseBuilderTests_CanBuildFromMethodWithThenAttribute" Expanded="true" />
     <Node UniqueName="[0-1027]BDDForNUnit.Test.BDDTestFixtureTestClass" Expanded="true" />
     <Node UniqueName="[0-1016]BDDForNUnit.Test.BDDTestSuiteTests" Expanded="true" />
     <Node UniqueName="[0-1022]BDDForNUnit.Test.BDDTestSuiteTests_DoOneTimeSetUp" Expanded="true" />
@@ -20,6 +20,6 @@
     <Node UniqueName="[0-1012]BDDForNUnit.Test.ReflectionProviderTests_ClassWithoutDesiredAttributeHasAtrributeReturnsFalse" Expanded="true" />
     <Node UniqueName="[0-1014]BDDForNUnit.Test.ReflectionProviderTests_ConstructCreatesClassOfGivenType" Expanded="true" />
     <Node UniqueName="[0-1000]BDDForNUnit.Test.Tests" Expanded="true" />
-    <Node UniqueName="[0-1035]BDDForNUnit.Test.TypeManagerTests" Expanded="true" />
+    <Node UniqueName="[0-1040]BDDForNUnit.Test.TypeManagerTests" Expanded="true" />
   </Nodes>
 </VisualState>
