@@ -17,7 +17,7 @@ C:\dev\BDDForNUnit\BDDForNUnit.Test\bin\Debug\nunit.core.dll
 C:\dev\BDDForNUnit\BDDForNUnit.Test\bin\Debug\nunit.core.interfaces.dll
 C:\dev\BDDForNUnit\BDDForNUnit.Test\bin\Debug\nunit.framework.dll
 C:\dev\BDDForNUnit\BDDForNUnit.Test\bin\Debug\BDDForNUnit.Attributes.pdb
-C:\dev\BDDForNUnit\BDDForNUnit.Test\bin\Debug\BDDForNUnit.pdb
 C:\dev\BDDForNUnit\BDDForNUnit.Test\obj\Debug\ResolveAssemblyReference.cache
 C:\dev\BDDForNUnit\BDDForNUnit.Test\obj\Debug\BDDForNUnit.Test.dll
 C:\dev\BDDForNUnit\BDDForNUnit.Test\obj\Debug\BDDForNUnit.Test.pdb
+C:\dev\BDDForNUnit\BDDForNUnit.Test\bin\Debug\BDDForNUnit.pdb

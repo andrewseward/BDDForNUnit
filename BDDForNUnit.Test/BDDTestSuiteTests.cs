@@ -62,7 +62,7 @@ namespace BDDForNUnit.Test
         }
 
         [Test]
-        public void FixtureTypeIsStored()
+        public void ThenFixtureTypeIsStored()
         {
             Assert.That(_bddTestSuite.FixtureType, Is.EqualTo(_fixtureType));
         }
@@ -130,5 +130,7 @@ namespace BDDForNUnit.Test
         {
             _mockReflectionProvider.Verify(rp => rp.InvokeMethod(_whenMethods[0].Method, _fixture));
         }
+
+        
     }
 }

@@ -60,6 +60,8 @@
     <Compile Include="BDDTestSuiteTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionProviderTests.cs" />
+    <Compile Include="TestDescriberTests.cs" />
+    <Compile Include="TestDescriptionWriterTests.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="TypeManagerTests.cs" />
   </ItemGroup>

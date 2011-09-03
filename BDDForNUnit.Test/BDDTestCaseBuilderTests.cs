@@ -24,7 +24,7 @@ namespace BDDForNUnit.Test
                 Returns(true);
 
 
-            var bddTestCaseBuilder = new BDDTestCaseBuilder(_mockReflectionProvider.Object);
+            var bddTestCaseBuilder = new BDDTestCaseBuilder(_mockReflectionProvider.Object, new Mock<ITestDescriber>().Object);
 
             _methodInfo = typeof(BDDTestFixtureTestClass).GetMethod("TestMethod1");
             _returnedValue = bddTestCaseBuilder.CanBuildFrom(_methodInfo);
@@ -48,11 +48,13 @@ namespace BDDForNUnit.Test
     public class BDDTestCaseBuilderTests_BuildFrom
     {
         private NUnit.Core.Test _returnedTestMethod;
+        private Mock<ITestDescriber> _mockTestDescriber;
 
         [SetUp]
         public void GivenClassWithBDDTestFixtureAttributeWhenBuildFromIsCalled()
         {
-            var bddTestCaseBuilder = new BDDTestCaseBuilder(new Mock<IReflectionProvider>().Object);
+            _mockTestDescriber = new Mock<ITestDescriber>();
+            var bddTestCaseBuilder = new BDDTestCaseBuilder(new Mock<IReflectionProvider>().Object, _mockTestDescriber.Object);
 
             var methodInfo = typeof (BDDTestFixtureTestClass).GetMethod("TestMethod1");
             _returnedTestMethod = bddTestCaseBuilder.BuildFrom(methodInfo);
@@ -62,6 +64,12 @@ namespace BDDForNUnit.Test
         public void ThenNUnitTestMethodIsReturned()
         {
             Assert.That(_returnedTestMethod, Is.InstanceOf<NUnitTestMethod>());
+        }
+
+        [Test]
+        public void ThenTestIsSentTestDescriber()
+        {
+            _mockTestDescriber.Verify(td => td.WriteDescription(_returnedTestMethod));
         }
     }
 }

@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using BDDForNUnit;
-using NUnit.Core.Extensibility;
+﻿using NUnit.Core.Extensibility;
 
 
 namespace BDDForNUnit
@@ -19,7 +15,7 @@ namespace BDDForNUnit
             suiteBuildersExtensionPoint.Install(new BDDSuiteBuilder(new ReflectionProvider()));
 
             var testCaseBuildersExtensionPoint = host.GetExtensionPoint("TestCaseBuilders");
-            testCaseBuildersExtensionPoint.Install(new BDDTestCaseBuilder(new ReflectionProvider()));
+            testCaseBuildersExtensionPoint.Install(new BDDTestCaseBuilder(new ReflectionProvider(), new TestDescriber(new TestDescriptionWriter(), new TypeManager())));
             return true;
         }
     }

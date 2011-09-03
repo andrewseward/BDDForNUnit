@@ -74,9 +74,13 @@
     <Compile Include="BDDTestCaseBuilder.cs" />
     <Compile Include="BDDTestSuite.cs" />
     <Compile Include="IReflectionProvider.cs" />
+    <Compile Include="ITestDescriber.cs" />
+    <Compile Include="ITestDescriptionWriter.cs" />
     <Compile Include="ITypeManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionProvider.cs" />
+    <Compile Include="TestDescriber.cs" />
+    <Compile Include="TestDescriptionWriter.cs" />
     <Compile Include="TypeManager.cs" />
   </ItemGroup>
   <ItemGroup>

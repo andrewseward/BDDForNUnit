@@ -25,5 +25,12 @@ namespace BDDForNUnit.Example
             Console.WriteLine("THEN");
             Assert.Pass("MY TEST PASSES!");
         }
+
+        [Then]
+        public void ThenMyOtherTestPasses()
+        {
+            Console.WriteLine("THEN2");
+            Assert.Pass("MY TEST PASSES!");
+        }
     }
 }
