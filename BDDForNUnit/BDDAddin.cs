@@ -1,6 +1,4 @@
 ﻿using NUnit.Core.Extensibility;
-
-
 namespace BDDForNUnit
 {
     [NUnitAddin(Description = "An NUnit plugin which allows Given-When-Then style tests", Name = "BDDForNUnit", Type = ExtensionType.Core)]
@@ -15,6 +13,8 @@ namespace BDDForNUnit
             suiteBuildersExtensionPoint.Install(new BDDSuiteBuilder(new ReflectionProvider()));
 
             var testCaseBuildersExtensionPoint = host.GetExtensionPoint("TestCaseBuilders");
+            if (testCaseBuildersExtensionPoint == null)
+                return false;
             testCaseBuildersExtensionPoint.Install(new BDDTestCaseBuilder(new ReflectionProvider(), new TestDescriber(new TestDescriptionWriter(), new TypeManager())));
             return true;
         }

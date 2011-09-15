@@ -104,7 +104,7 @@ namespace BDDForNUnit.Test
                                                 _fixtureType);
             _fixture = new object();
             bddTestSuite.Fixture = _fixture;
-            bddTestSuite.RunDoOneTimeSetUp(new TestResult(new TestName()));
+            bddTestSuite.RunExecuteActions();
         }
 
         [Test]

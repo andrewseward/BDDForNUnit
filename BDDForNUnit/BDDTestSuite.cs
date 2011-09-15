@@ -5,6 +5,21 @@ using NUnit.Core;
 
 namespace BDDForNUnit
 {
+    public class BDDNUnitTestMethod : NUnitTestMethod
+    {
+
+        public BDDNUnitTestMethod(MethodInfo method) : base(method)
+        {
+        }
+
+        public override TestResult RunTest()
+        {
+            //describe test
+            //run given, when
+            return base.RunTest();
+        }
+    }
+
     public class BDDTestSuite : TestSuite
     {
         private readonly IReflectionProvider _reflectionProvider;
@@ -40,20 +55,21 @@ namespace BDDForNUnit
             set { base.Fixture = value; }
         }
 
-        internal void RunDoOneTimeSetUp(TestResult suiteResult)
+        internal void RunExecuteActions()
         {
-            DoOneTimeSetUp(suiteResult);
+            ExecuteActions(ActionLevel.Test, ActionPhase.Before);
         }
 
-        protected override void DoOneTimeSetUp(TestResult suiteResult)
+        protected override void ExecuteActions(ActionLevel level, ActionPhase phase)
         {
-            base.DoOneTimeSetUp(suiteResult);
 
             InvokeMethodsWithAttribute(typeof(GivenAttribute));
 
             InvokeMethodsWithAttribute(typeof(WhenAttribute));
 
+            base.ExecuteActions(level, phase);
         }
+
 
         private void InvokeMethodsWithAttribute(Type attributeType)
         {
