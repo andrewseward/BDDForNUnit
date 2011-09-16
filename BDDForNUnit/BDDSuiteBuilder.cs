@@ -9,10 +9,12 @@ namespace BDDForNUnit
     public class BDDSuiteBuilder : ISuiteBuilder
     {
         private readonly IReflectionProvider _reflectionProvider;
+        private readonly ITypeManager _typeManager;
 
-        public BDDSuiteBuilder(IReflectionProvider reflectionProvider) : base()
+        public BDDSuiteBuilder(IReflectionProvider reflectionProvider, ITypeManager typeManager) : base()
         {
             _reflectionProvider = reflectionProvider;
+            _typeManager = typeManager;
         }
 
         public bool CanBuildFrom(Type type)
@@ -23,7 +25,7 @@ namespace BDDForNUnit
 
         public Test BuildFrom(Type type)
         {
-            return new BDDTestSuite(_reflectionProvider, new TypeManager(), type);
+            return new BDDTestSuite(_reflectionProvider, _typeManager, type);
         }
 
     }

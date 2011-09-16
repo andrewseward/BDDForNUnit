@@ -5,6 +5,6 @@ namespace BDDForNUnit
 {
     public interface ITypeManager
     {
-        NUnitTestMethod[] GetNUnitTestMethodsWithAttribute(Type fixtureType, Type attributeType);
+        BDDNUnitTestMethod[] GetNUnitTestMethodsWithAttribute(Type fixtureType, Type attributeType);
     }
 }

@@ -1,30 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
 using BDDForNUnit.Attributes;
-using NUnit.Core;
 
 namespace BDDForNUnit
 {
     public class TestDescriber : ITestDescriber
     {
         private readonly ITestDescriptionWriter _testDescriptionWriter;
-        private readonly ITypeManager _typeManager;
 
-        public TestDescriber(ITestDescriptionWriter testDescriptionWriter, ITypeManager typeManager)
+        public TestDescriber(ITestDescriptionWriter testDescriptionWriter)
         {
             _testDescriptionWriter = testDescriptionWriter;
-            _typeManager = typeManager;
         }
 
-        public void WriteDescription(Test test)
+        public void WriteDescription(string testName, IEnumerable<BDDNUnitTestMethod> givenMethods, IEnumerable<BDDNUnitTestMethod> whenMethods)
         {
-            DescribeMethodsWithAttribute(test.FixtureType, typeof (GivenAttribute));
-            DescribeMethodsWithAttribute(test.FixtureType, typeof(WhenAttribute));
-            _testDescriptionWriter.Write(test.TestName.Name, GetAttributeKeyword(typeof(ThenAttribute)));
+            DescribeMethodsWithAttribute(givenMethods, typeof (GivenAttribute));
+            DescribeMethodsWithAttribute(whenMethods, typeof(WhenAttribute));
+            _testDescriptionWriter.Write(testName, GetAttributeKeyword(typeof(ThenAttribute)));
         }
 
-        private void DescribeMethodsWithAttribute(Type fixtureType, Type attributeType)
+        private void DescribeMethodsWithAttribute(IEnumerable<BDDNUnitTestMethod> methods, Type attributeType)
         {
-            var methods = _typeManager.GetNUnitTestMethodsWithAttribute(fixtureType, attributeType);
 
             foreach (var nUnitTestMethod in methods)
             {

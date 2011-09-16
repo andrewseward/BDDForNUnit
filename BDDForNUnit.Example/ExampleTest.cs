@@ -10,27 +10,31 @@ namespace BDDForNUnit.Example
         [Given]
         public void GivenIHaveWrittenGivenToTheConsole()
         {
-            Console.WriteLine("GIVEN");
+            Console.WriteLine("the GIVEN method runs...");
         }
 
         [When]
         public void WhenIWriteWhenToTheConsole()
         {
-            Console.WriteLine("WHEN");
+            Console.WriteLine("the WHEN method runs...");
         }
 
         [Then]
-        public void ThenMyTestPasses()
+        public void ThenMyFirstTestPasses()
         {
-            Console.WriteLine("THEN");
-            Assert.Pass("MY TEST PASSES!");
+            Assert.Pass("My TEST passes!");
         }
 
         [Then]
-        public void ThenMyOtherTestPasses()
+        public void ThenMySecondTestPasses()
         {
-            Console.WriteLine("THEN2");
-            Assert.Pass("MY TEST PASSES!");
+            Assert.Pass("My second TEST passes!");
+        }
+
+        [Then]
+        public void ThenMyThirdTestFails()
+        {
+            Assert.Fail("My third TEST fails!");
         }
     }
 }

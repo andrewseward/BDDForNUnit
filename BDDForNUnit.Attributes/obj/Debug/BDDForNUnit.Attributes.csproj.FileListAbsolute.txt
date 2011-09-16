@@ -3,8 +3,8 @@ C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Attributes\bin\Debug\BDDForNU
 C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Attributes\obj\Debug\ResolveAssemblyReference.cache
 C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Attributes\obj\Debug\BDDForNUnit.Attributes.dll
 C:\dev\GivenWhenThenForNUnit\GivenWhenThenForNUnit.Attributes\obj\Debug\BDDForNUnit.Attributes.pdb
-C:\dev\BDDForNUnit\BDDForNUnit.Attributes\bin\Debug\BDDForNUnit.Attributes.dll
-C:\dev\BDDForNUnit\BDDForNUnit.Attributes\bin\Debug\BDDForNUnit.Attributes.pdb
-C:\dev\BDDForNUnit\BDDForNUnit.Attributes\obj\Debug\ResolveAssemblyReference.cache
-C:\dev\BDDForNUnit\BDDForNUnit.Attributes\obj\Debug\BDDForNUnit.Attributes.dll
-C:\dev\BDDForNUnit\BDDForNUnit.Attributes\obj\Debug\BDDForNUnit.Attributes.pdb
+C:\Dev\BDDForNUnit\BDDForNUnit.Attributes\bin\Debug\BDDForNUnit.Attributes.dll
+C:\Dev\BDDForNUnit\BDDForNUnit.Attributes\bin\Debug\BDDForNUnit.Attributes.pdb
+C:\Dev\BDDForNUnit\BDDForNUnit.Attributes\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\BDDForNUnit\BDDForNUnit.Attributes\obj\Debug\BDDForNUnit.Attributes.dll
+C:\Dev\BDDForNUnit\BDDForNUnit.Attributes\obj\Debug\BDDForNUnit.Attributes.pdb

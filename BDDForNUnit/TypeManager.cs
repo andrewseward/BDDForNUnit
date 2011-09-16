@@ -8,14 +8,23 @@ namespace BDDForNUnit
 {
     public class TypeManager : ITypeManager
     {
-        public NUnitTestMethod[] GetNUnitTestMethodsWithAttribute(Type fixtureType, Type attributeType)
+        private readonly IReflectionProvider _reflectionProvider;
+        private readonly ITestDescriber _testDescriber;
+
+        public TypeManager(IReflectionProvider reflectionProvider, ITestDescriber testDescriber)
         {
-            var nUnitTestMethods = new List<NUnitTestMethod>();
+            _reflectionProvider = reflectionProvider;
+            _testDescriber = testDescriber;
+        }
+
+        public BDDNUnitTestMethod[] GetNUnitTestMethodsWithAttribute(Type fixtureType, Type attributeType)
+        {
+            var nUnitTestMethods = new List<BDDNUnitTestMethod>();
             foreach (MethodInfo method in fixtureType.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
             {
                 if (method.GetCustomAttributes(false).Any(attr=>attr.GetType().Equals(attributeType)))
                 {
-                    nUnitTestMethods.Add(new NUnitTestMethod(method));
+                    nUnitTestMethods.Add(new BDDNUnitTestMethod(method, attributeType, _reflectionProvider, _testDescriber));
                 }
             }
 

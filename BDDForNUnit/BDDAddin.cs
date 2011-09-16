@@ -10,12 +10,10 @@ namespace BDDForNUnit
             if (suiteBuildersExtensionPoint == null)
                 return false;
 
-            suiteBuildersExtensionPoint.Install(new BDDSuiteBuilder(new ReflectionProvider()));
+            var reflectionProvider = new ReflectionProvider();
+            var typeManager = new TypeManager(reflectionProvider, new TestDescriber(new TestDescriptionWriter()));
+            suiteBuildersExtensionPoint.Install(new BDDSuiteBuilder(reflectionProvider, typeManager));
 
-            var testCaseBuildersExtensionPoint = host.GetExtensionPoint("TestCaseBuilders");
-            if (testCaseBuildersExtensionPoint == null)
-                return false;
-            testCaseBuildersExtensionPoint.Install(new BDDTestCaseBuilder(new ReflectionProvider(), new TestDescriber(new TestDescriptionWriter(), new TypeManager())));
             return true;
         }
     }

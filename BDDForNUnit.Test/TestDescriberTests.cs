@@ -10,7 +10,6 @@ namespace BDDForNUnit.Test
     public class TestDescriberTests
     {
         private Mock<ITestDescriptionWriter> _mockTestDescriptionWriter;
-        private Mock<ITypeManager> _mockTypeManager;
         private string _givenMethodName;
         private string _whenMethodName;
         private string _testMethodName;
@@ -21,27 +20,19 @@ namespace BDDForNUnit.Test
             _givenMethodName = "GivenMethod1";
             var givenMethods = new[]
                                        {
-                                           new NUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod(_givenMethodName))
+                                           new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod(_givenMethodName), typeof(GivenAttribute), new Mock<IReflectionProvider>().Object, new Mock<ITestDescriber>().Object)
                                        };
             _whenMethodName = "WhenMethod1";
             var whenMethods = new[]
                                       {
-                                          new NUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod(_whenMethodName))
+                                          new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod(_whenMethodName), typeof(WhenAttribute), new Mock<IReflectionProvider>().Object, new Mock<ITestDescriber>().Object)
                                       };
-            _mockTypeManager = new Mock<ITypeManager>();
-            _mockTypeManager
-                .Setup(tm => tm.GetNUnitTestMethodsWithAttribute(It.IsAny<Type>(), typeof(GivenAttribute)))
-                .Returns(givenMethods);
-            _mockTypeManager
-                .Setup(tm => tm.GetNUnitTestMethodsWithAttribute(It.IsAny<Type>(), typeof(WhenAttribute)))
-                .Returns(whenMethods);
-
+            
             _mockTestDescriptionWriter = new Mock<ITestDescriptionWriter>();
             _testMethodName = "TestMethod1";
-            var nUnitTestMethod = new NUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod(_testMethodName));
 
-            var testDescriber = new TestDescriber(_mockTestDescriptionWriter.Object, _mockTypeManager.Object);
-            testDescriber.WriteDescription(nUnitTestMethod);
+            var testDescriber = new TestDescriber(_mockTestDescriptionWriter.Object);
+            testDescriber.WriteDescription(_testMethodName, givenMethods, whenMethods);
         }
 
         [Test]

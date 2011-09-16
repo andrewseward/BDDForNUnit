@@ -23,7 +23,7 @@ namespace BDDForNUnit.Test
                 Returns(true);
 
 
-            var bddSuiteBuilder = new BDDSuiteBuilder(_mockReflectionProvider.Object);
+            var bddSuiteBuilder = new BDDSuiteBuilder(_mockReflectionProvider.Object, new Mock<ITypeManager>().Object);
 
             _returnedValue = bddSuiteBuilder.CanBuildFrom(typeof (BDDTestFixtureTestClass));
         }
@@ -50,7 +50,7 @@ namespace BDDForNUnit.Test
         [SetUp]
         public void GivenClassWithBDDTestFixtureAttributeWhenBuildFromIsCalled()
         {
-            var bddSuiteBuilder = new BDDSuiteBuilder(new Mock<IReflectionProvider>().Object);
+            var bddSuiteBuilder = new BDDSuiteBuilder(new Mock<IReflectionProvider>().Object, new Mock<ITypeManager>().Object);
 
             _returnedTestFixture = bddSuiteBuilder.BuildFrom(typeof(BDDTestFixtureTestClass));
         }

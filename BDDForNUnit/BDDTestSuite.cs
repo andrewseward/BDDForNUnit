@@ -1,25 +1,11 @@
 ﻿using System;
-using System.Reflection;
+using System.Collections;
 using BDDForNUnit.Attributes;
 using NUnit.Core;
+using NUnit.Framework;
 
 namespace BDDForNUnit
 {
-    public class BDDNUnitTestMethod : NUnitTestMethod
-    {
-
-        public BDDNUnitTestMethod(MethodInfo method) : base(method)
-        {
-        }
-
-        public override TestResult RunTest()
-        {
-            //describe test
-            //run given, when
-            return base.RunTest();
-        }
-    }
-
     public class BDDTestSuite : TestSuite
     {
         private readonly IReflectionProvider _reflectionProvider;
@@ -32,7 +18,8 @@ namespace BDDForNUnit
             BuildTestsFromFixtureType(fixtureType);
         }
 
-        public BDDTestSuite(Type fixtureType) : this(new ReflectionProvider(), new TypeManager(), fixtureType)
+        public BDDTestSuite(Type fixtureType)
+            : this(new ReflectionProvider(), new TypeManager(new ReflectionProvider(), new TestDescriber(new TestDescriptionWriter())), fixtureType)
         {
             
         }
@@ -42,9 +29,12 @@ namespace BDDForNUnit
             Fixture = _reflectionProvider.Construct(fixtureType);
 
             var methods = _typeManager.GetNUnitTestMethodsWithAttribute(fixtureType, typeof (ThenAttribute));
-
+            var givenMethods = _typeManager.GetNUnitTestMethodsWithAttribute(FixtureType, typeof(GivenAttribute));
+            var whenMethods = _typeManager.GetNUnitTestMethodsWithAttribute(FixtureType, typeof(WhenAttribute));
             foreach (var nUnitTestMethod in methods)
             {
+                nUnitTestMethod.GivenMethods = givenMethods;
+                nUnitTestMethod.WhenMethods = whenMethods;
                 Add(nUnitTestMethod);
             }
         }
@@ -54,31 +44,7 @@ namespace BDDForNUnit
             get { return base.Fixture; }
             set { base.Fixture = value; }
         }
-
-        internal void RunExecuteActions()
-        {
-            ExecuteActions(ActionLevel.Test, ActionPhase.Before);
-        }
-
-        protected override void ExecuteActions(ActionLevel level, ActionPhase phase)
-        {
-
-            InvokeMethodsWithAttribute(typeof(GivenAttribute));
-
-            InvokeMethodsWithAttribute(typeof(WhenAttribute));
-
-            base.ExecuteActions(level, phase);
-        }
-
-
-        private void InvokeMethodsWithAttribute(Type attributeType)
-        {
-            var methods = _typeManager.GetNUnitTestMethodsWithAttribute(FixtureType, attributeType);
-
-            foreach (var nUnitTestMethod in methods)
-            {
-                _reflectionProvider.InvokeMethod(nUnitTestMethod.Method, Fixture);
-            }
-        }
+        
+        
     }
 }

@@ -1,20 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\BDDForNUnit.Example.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-09-15" time="22:00:17">
-  <environment nunit-version="2.6.0.11240" clr-version="2.0.50727.4961" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\dev\BDDForNUnit\3rdParty\runtime\nunit\bin" machine-name="THINKPAD" user="Mike" user-domain="Thinkpad" />
+<test-results name="C:\Dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\BDDForNUnit.Example.dll" total="3" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-09-16" time="14:58:03">
+  <environment nunit-version="2.6.0.11240" clr-version="2.0.50727.3623" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Dev\BDDForNUnit\3rdParty\runtime\nunit\bin" machine-name="HARRISSONPLATXP" user="developer" user-domain="ESENDEX" />
   <culture-info current-culture="en-GB" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\BDDForNUnit.Example.dll" executed="True" result="Success" success="True" time="0.173" asserts="0">
+  <test-suite type="Assembly" name="C:\Dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\BDDForNUnit.Example.dll" executed="True" result="Failure" success="False" time="0.078" asserts="0">
     <results>
-      <test-suite type="Namespace" name="BDDForNUnit" executed="True" result="Success" success="True" time="0.153" asserts="0">
+      <test-suite type="Namespace" name="BDDForNUnit" executed="True" result="Failure" success="False" time="0.063" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Example" executed="True" result="Success" success="True" time="0.153" asserts="0">
+          <test-suite type="Namespace" name="Example" executed="True" result="Failure" success="False" time="0.063" asserts="0">
             <results>
-              <test-suite type="TestSuite" name="ExampleTest" executed="True" result="Success" success="True" time="0.152" asserts="0">
+              <test-suite type="TestSuite" name="ExampleTest" executed="True" result="Failure" success="False" time="0.063" asserts="0">
                 <results>
-                  <test-case name="BDDForNUnit.Example.ExampleTest.ThenMyTestPasses" executed="True" result="Success" success="True" time="0.078" asserts="0">
+                  <test-case name="BDDForNUnit.Example.ExampleTest.ThenMyFirstTestPasses" executed="True" result="Success" success="True" time="0.031" asserts="0">
                     <reason>
-                      <message><![CDATA[MY TEST PASSES!]]></message>
+                      <message><![CDATA[My TEST passes!]]></message>
                     </reason>
+                  </test-case>
+                  <test-case name="BDDForNUnit.Example.ExampleTest.ThenMySecondTestPasses" executed="True" result="Success" success="True" time="0.000" asserts="0">
+                    <reason>
+                      <message><![CDATA[My second TEST passes!]]></message>
+                    </reason>
+                  </test-case>
+                  <test-case name="BDDForNUnit.Example.ExampleTest.ThenMyThirdTestFails" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[My third TEST fails!]]></message>
+                      <stack-trace><![CDATA[at BDDForNUnit.Example.ExampleTest.ThenMyThirdTestFails() in C:\Dev\BDDForNUnit\BDDForNUnit.Example\ExampleTest.cs:line 37
+]]></stack-trace>
+                    </failure>
                   </test-case>
                 </results>
               </test-suite>

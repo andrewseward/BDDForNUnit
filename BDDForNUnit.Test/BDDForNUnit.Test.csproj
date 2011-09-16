@@ -54,8 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BDDAddinTests.cs" />
+    <Compile Include="BDDNUnitTestMethodTests.cs" />
     <Compile Include="BDDSuiteBuilderTests.cs" />
-    <Compile Include="BDDTestCaseBuilderTests.cs" />
     <Compile Include="BDDTestFixtureTestClass.cs" />
     <Compile Include="BDDTestSuiteTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

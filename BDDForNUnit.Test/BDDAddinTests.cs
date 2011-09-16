@@ -58,11 +58,6 @@ namespace BDDForNUnit.Test
             _mockSuiteBuildersExtensionPoint.Verify(eh => eh.Install(It.IsAny<BDDSuiteBuilder>()));
         }
 
-        [Test]
-        public void ThenBDDTestCaseBuilderIsInstalledAgainstExtensionPoint()
-        {
-            _mockTestCaseBuildersExtensionPoint.Verify(eh => eh.Install(It.IsAny<BDDTestCaseBuilder>()));
-        }
 
         [Test]
         public void ReturnsTrue()
