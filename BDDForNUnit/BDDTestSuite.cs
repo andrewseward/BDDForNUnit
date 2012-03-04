@@ -19,7 +19,7 @@ namespace BDDForNUnit
         }
 
         public BDDTestSuite(Type fixtureType)
-            : this(new ReflectionProvider(), new TypeManager(new ReflectionProvider(), new TestDescriber(new TestDescriptionWriter())), fixtureType)
+            : this(new ReflectionProvider(), new TypeManager(new ReflectionProvider(), new TestDescriber(new TestDescriptionWriter()), new TestExceptionWriter()), fixtureType)
         {
             
         }

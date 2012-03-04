@@ -36,5 +36,11 @@ namespace BDDForNUnit.Example
         {
             Assert.Fail("My third TEST fails!");
         }
+
+        [Then]
+        public void ThenMyFourthTestFailsBecauseOfAnInequality()
+        {
+            Assert.That("cat", Is.EqualTo("dog"));
+        }
     }
 }

@@ -10,11 +10,13 @@ namespace BDDForNUnit
     {
         private readonly IReflectionProvider _reflectionProvider;
         private readonly ITestDescriber _testDescriber;
+        private readonly ITestExceptionWriter _testExceptionWriter;
 
-        public TypeManager(IReflectionProvider reflectionProvider, ITestDescriber testDescriber)
+        public TypeManager(IReflectionProvider reflectionProvider, ITestDescriber testDescriber, ITestExceptionWriter testExceptionWriter)
         {
             _reflectionProvider = reflectionProvider;
             _testDescriber = testDescriber;
+            _testExceptionWriter = testExceptionWriter;
         }
 
         public BDDNUnitTestMethod[] GetNUnitTestMethodsWithAttribute(Type fixtureType, Type attributeType)
@@ -22,9 +24,9 @@ namespace BDDForNUnit
             var nUnitTestMethods = new List<BDDNUnitTestMethod>();
             foreach (MethodInfo method in fixtureType.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
             {
-                if (method.GetCustomAttributes(false).Any(attr=>attr.GetType().Equals(attributeType)))
+                if (method.GetCustomAttributes(false).Any(attr=>attr.GetType() == attributeType))
                 {
-                    nUnitTestMethods.Add(new BDDNUnitTestMethod(method, attributeType, _reflectionProvider, _testDescriber));
+                    nUnitTestMethods.Add(new BDDNUnitTestMethod(method, attributeType, _reflectionProvider, _testDescriber, _testExceptionWriter));
                 }
             }
 

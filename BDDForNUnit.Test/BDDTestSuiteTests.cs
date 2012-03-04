@@ -29,18 +29,18 @@ namespace BDDForNUnit.Test
 
             _givenMethods = new[]
                             {
-                               new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("GivenMethod1"),typeof(GivenAttribute), _mockReflectionProvider.Object, new Mock<ITestDescriber>().Object)
+                               new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("GivenMethod1"),typeof(GivenAttribute), _mockReflectionProvider.Object, new Mock<ITestDescriber>().Object,  new Mock<ITestExceptionWriter>().Object)
                            };
 
             _whenMethods = new[]
                             {
-                               new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("WhenMethod1"), typeof(WhenAttribute), _mockReflectionProvider.Object, new Mock<ITestDescriber>().Object)
+                               new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("WhenMethod1"), typeof(WhenAttribute), _mockReflectionProvider.Object, new Mock<ITestDescriber>().Object,  new Mock<ITestExceptionWriter>().Object)
                            };
 
             _methods = new[]
                            {
-                               new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("TestMethod1"), typeof (ThenAttribute), _mockReflectionProvider.Object, new Mock<ITestDescriber>().Object),
-                               new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("TestMethod2"), typeof (ThenAttribute), _mockReflectionProvider.Object, new Mock<ITestDescriber>().Object)
+                               new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("TestMethod1"), typeof (ThenAttribute), _mockReflectionProvider.Object, new Mock<ITestDescriber>().Object,  new Mock<ITestExceptionWriter>().Object),
+                               new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod("TestMethod2"), typeof (ThenAttribute), _mockReflectionProvider.Object, new Mock<ITestDescriber>().Object,  new Mock<ITestExceptionWriter>().Object)
                            };
             _mockTypeManager = new Mock<ITypeManager>();
             _mockTypeManager.Setup(tm => tm.GetNUnitTestMethodsWithAttribute(It.IsAny<Type>(), typeof(ThenAttribute))).

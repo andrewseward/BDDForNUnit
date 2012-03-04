@@ -11,7 +11,7 @@ namespace BDDForNUnit
                 return false;
 
             var reflectionProvider = new ReflectionProvider();
-            var typeManager = new TypeManager(reflectionProvider, new TestDescriber(new TestDescriptionWriter()));
+            var typeManager = new TypeManager(reflectionProvider, new TestDescriber(new TestDescriptionWriter()), new TestExceptionWriter());
             suiteBuildersExtensionPoint.Install(new BDDSuiteBuilder(reflectionProvider, typeManager));
 
             return true;

@@ -62,6 +62,8 @@
     <Compile Include="ReflectionProviderTests.cs" />
     <Compile Include="TestDescriberTests.cs" />
     <Compile Include="TestDescriptionWriterTests.cs" />
+    <Compile Include="TestExceptionHelper.cs" />
+    <Compile Include="TestExceptionWriterTests.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="TypeManagerTests.cs" />
   </ItemGroup>

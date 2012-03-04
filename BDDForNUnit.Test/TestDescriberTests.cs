@@ -20,12 +20,12 @@ namespace BDDForNUnit.Test
             _givenMethodName = "GivenMethod1";
             var givenMethods = new[]
                                        {
-                                           new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod(_givenMethodName), typeof(GivenAttribute), new Mock<IReflectionProvider>().Object, new Mock<ITestDescriber>().Object)
+                                           new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod(_givenMethodName), typeof(GivenAttribute), new Mock<IReflectionProvider>().Object, new Mock<ITestDescriber>().Object,  new Mock<ITestExceptionWriter>().Object)
                                        };
             _whenMethodName = "WhenMethod1";
             var whenMethods = new[]
                                       {
-                                          new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod(_whenMethodName), typeof(WhenAttribute), new Mock<IReflectionProvider>().Object, new Mock<ITestDescriber>().Object)
+                                          new BDDNUnitTestMethod(typeof (BDDTestFixtureTestClass).GetMethod(_whenMethodName), typeof(WhenAttribute), new Mock<IReflectionProvider>().Object, new Mock<ITestDescriber>().Object,  new Mock<ITestExceptionWriter>().Object)
                                       };
             
             _mockTestDescriptionWriter = new Mock<ITestDescriptionWriter>();

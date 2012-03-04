@@ -40,10 +40,6 @@
       <HintPath>..\3rdParty\runtime\nunit\bin\lib\nunit.core.interfaces.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="nunit.fixtures">
-      <HintPath>..\3rdParty\runtime\nunit\bin\lib\nunit.fixtures.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="nunit.framework, Version=2.5.9.10348, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\3rdParty\runtime\nunit\bin\framework\nunit.framework.dll</HintPath>
@@ -76,11 +72,13 @@
     <Compile Include="IReflectionProvider.cs" />
     <Compile Include="ITestDescriber.cs" />
     <Compile Include="ITestDescriptionWriter.cs" />
+    <Compile Include="ITestExceptionWriter.cs" />
     <Compile Include="ITypeManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionProvider.cs" />
     <Compile Include="TestDescriber.cs" />
     <Compile Include="TestDescriptionWriter.cs" />
+    <Compile Include="TestExceptionWriter.cs" />
     <Compile Include="TypeManager.cs" />
   </ItemGroup>
   <ItemGroup>

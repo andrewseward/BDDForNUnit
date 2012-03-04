@@ -17,7 +17,7 @@ namespace BDDForNUnit.Test
         public void GivenClassTypeWithTestsWhenGetNUnitTestMethodsWithAttributeOfTypeThen()
         {
             _testType = typeof (ThenAttribute);
-            _returnedMethods = new TypeManager(new Mock<IReflectionProvider>().Object, new Mock<ITestDescriber>().Object).GetNUnitTestMethodsWithAttribute(typeof(BDDTestFixtureTestClass),
+            _returnedMethods = new TypeManager(new Mock<IReflectionProvider>().Object, new Mock<ITestDescriber>().Object, new Mock<ITestExceptionWriter>().Object).GetNUnitTestMethodsWithAttribute(typeof(BDDTestFixtureTestClass),
                                                                                   _testType);
         }
 
