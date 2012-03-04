@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0E12D365-FF45-453D-B5B5-2D5658003E61}</ProjectGuid>
+    <ProjectGuid>{FB3EA0A3-137A-4969-88AD-F3EA0853F714}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BDDForNUnit.Test</RootNamespace>
-    <AssemblyName>BDDForNUnit.Test</AssemblyName>
+    <RootNamespace>BDDForNUnit.NUnitPlugin</RootNamespace>
+    <AssemblyName>BDDForNUnit.NUnitPlugin</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\3rdParty\runtime\nunit\bin\addins\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -32,18 +32,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Moq">
-      <HintPath>..\3rdParty\test\Moq.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.core">
       <HintPath>..\3rdParty\runtime\nunit\bin\lib\nunit.core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="nunit.core.interfaces">
       <HintPath>..\3rdParty\runtime\nunit\bin\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=2.5.9.10348, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\3rdParty\runtime\nunit\bin\nunit.framework.dll</HintPath>
+      <HintPath>..\3rdParty\runtime\nunit\bin\framework\nunit.framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.uiexception">
+      <HintPath>..\3rdParty\runtime\nunit\bin\lib\nunit.uiexception.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.uikit">
+      <HintPath>..\3rdParty\runtime\nunit\bin\lib\nunit.uikit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.util">
+      <HintPath>..\3rdParty\runtime\nunit\bin\lib\nunit.util.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,31 +65,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BDDAddinTests.cs" />
-    <Compile Include="BDDNUnitTestMethodTests.cs" />
-    <Compile Include="BDDSuiteBuilderTests.cs" />
-    <Compile Include="BDDTestFixtureTestClass.cs" />
-    <Compile Include="BDDTestSuiteTests.cs" />
+    <Compile Include="BDDAddin.cs" />
+    <Compile Include="BDDNUnitTestMethod.cs" />
+    <Compile Include="BDDSuiteBuilder.cs" />
+    <Compile Include="BDDTestSuite.cs" />
+    <Compile Include="IReflectionProvider.cs" />
+    <Compile Include="ITestDescriber.cs" />
+    <Compile Include="ITestDescriptionWriter.cs" />
+    <Compile Include="ITestExceptionWriter.cs" />
+    <Compile Include="ITypeManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReflectionProviderTests.cs" />
-    <Compile Include="TestDescriberTests.cs" />
-    <Compile Include="TestDescriptionWriterTests.cs" />
-    <Compile Include="TestExceptionHelper.cs" />
-    <Compile Include="TestExceptionWriterTests.cs" />
-    <Compile Include="Tests.cs" />
-    <Compile Include="TypeManagerTests.cs" />
+    <Compile Include="ReflectionProvider.cs" />
+    <Compile Include="TestDescriber.cs" />
+    <Compile Include="TestDescriptionWriter.cs" />
+    <Compile Include="TestExceptionWriter.cs" />
+    <Compile Include="TypeManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BDDForNUnit.NUnitPlugin\BDDForNUnit.NUnitPlugin.csproj">
-      <Project>{FB3EA0A3-137A-4969-88AD-F3EA0853F714}</Project>
-      <Name>BDDForNUnit.NUnitPlugin</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BDDForNUnit\BDDForNUnit.csproj">
       <Project>{13F7EBA0-D666-4117-AEF8-0567E1D5E826}</Project>
-      <Name>BDDForNUnit</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BDDForNUnit.NUnitPlugin\BDDForNUnit.NUnitPlugin.csproj">
-      <Project>{FB3EA0A3-137A-4969-88AD-F3EA0853F714}</Project>
       <Name>BDDForNUnit</Name>
     </ProjectReference>
   </ItemGroup>

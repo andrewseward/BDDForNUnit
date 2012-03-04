@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using BDDForNUnit.NUnitPlugin;
 using NUnit.Framework;
 
 namespace BDDForNUnit.Test

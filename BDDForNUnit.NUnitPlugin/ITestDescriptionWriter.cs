@@ -1,4 +1,4 @@
-﻿namespace BDDForNUnit
+﻿namespace BDDForNUnit.NUnitPlugin
 {
     public interface ITestDescriptionWriter
     {

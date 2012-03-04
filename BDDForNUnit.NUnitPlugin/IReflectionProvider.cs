@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace BDDForNUnit
+namespace BDDForNUnit.NUnitPlugin
 {
     public interface IReflectionProvider
     {

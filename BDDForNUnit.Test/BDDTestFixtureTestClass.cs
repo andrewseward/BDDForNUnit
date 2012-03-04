@@ -1,5 +1,4 @@
-﻿using BDDForNUnit.Attributes;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace BDDForNUnit.Test
 {

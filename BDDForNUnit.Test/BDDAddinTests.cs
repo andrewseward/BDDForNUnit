@@ -1,4 +1,5 @@
-﻿using Moq;
+﻿using BDDForNUnit.NUnitPlugin;
+using Moq;
 using NUnit.Core.Extensibility;
 using NUnit.Framework;
 

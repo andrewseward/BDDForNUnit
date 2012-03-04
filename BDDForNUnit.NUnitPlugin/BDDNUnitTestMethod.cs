@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using NUnit.Core;
 
-namespace BDDForNUnit
+namespace BDDForNUnit.NUnitPlugin
 {
     public class BDDNUnitTestMethod : NUnitTestMethod
     {

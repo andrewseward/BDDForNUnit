@@ -1,5 +1,4 @@
 ﻿using System;
-using BDDForNUnit.Attributes;
 using NUnit.Framework;
 
 namespace BDDForNUnit.Example

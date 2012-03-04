@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
-using NUnit.Core;
 
-namespace BDDForNUnit
+namespace BDDForNUnit.NUnitPlugin
 {
     public class TypeManager : ITypeManager
     {

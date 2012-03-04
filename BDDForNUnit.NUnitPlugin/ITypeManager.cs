@@ -1,7 +1,6 @@
 ﻿using System;
-using NUnit.Core;
 
-namespace BDDForNUnit
+namespace BDDForNUnit.NUnitPlugin
 {
     public interface ITypeManager
     {

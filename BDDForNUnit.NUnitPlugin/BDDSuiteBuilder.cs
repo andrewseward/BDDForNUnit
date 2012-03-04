@@ -1,10 +1,8 @@
 ﻿using System;
-using BDDForNUnit;
-using BDDForNUnit.Attributes;
 using NUnit.Core;
 using NUnit.Core.Extensibility;
 
-namespace BDDForNUnit
+namespace BDDForNUnit.NUnitPlugin
 {
     public class BDDSuiteBuilder : ISuiteBuilder
     {

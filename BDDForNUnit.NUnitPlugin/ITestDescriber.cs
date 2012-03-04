@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BDDForNUnit
+namespace BDDForNUnit.NUnitPlugin
 {
     public interface ITestDescriber
     {

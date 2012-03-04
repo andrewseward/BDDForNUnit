@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections;
-using BDDForNUnit.Attributes;
 using NUnit.Core;
-using NUnit.Framework;
 
-namespace BDDForNUnit
+namespace BDDForNUnit.NUnitPlugin
 {
     public class BDDTestSuite : TestSuite
     {

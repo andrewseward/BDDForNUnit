@@ -1,5 +1,5 @@
 ﻿using System;
-using BDDForNUnit.Attributes;
+using BDDForNUnit.NUnitPlugin;
 using Moq;
 using NUnit.Core;
 using NUnit.Framework;

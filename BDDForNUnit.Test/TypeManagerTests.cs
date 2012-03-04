@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-using BDDForNUnit.Attributes;
+using BDDForNUnit.NUnitPlugin;
 using Moq;
 using NUnit.Core;
 using NUnit.Framework;

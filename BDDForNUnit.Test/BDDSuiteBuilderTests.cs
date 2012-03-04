@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Reflection;
-using BDDForNUnit.Attributes;
+using BDDForNUnit.NUnitPlugin;
 using Moq;
 using NUnit.Framework;
 

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BDDForNUnit
+namespace BDDForNUnit.NUnitPlugin
 {
     public class TestDescriptionWriter : ITestDescriptionWriter
     {

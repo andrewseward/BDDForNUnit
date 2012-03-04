@@ -47,9 +47,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BDDForNUnit.Attributes\BDDForNUnit.Attributes.csproj">
+    <ProjectReference Include="..\BDDForNUnit\BDDForNUnit.csproj">
       <Project>{13F7EBA0-D666-4117-AEF8-0567E1D5E826}</Project>
-      <Name>BDDForNUnit.Attributes</Name>
+      <Name>BDDForNUnit</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

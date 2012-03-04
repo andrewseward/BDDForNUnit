@@ -1,5 +1,6 @@
 ﻿using NUnit.Core.Extensibility;
-namespace BDDForNUnit
+
+namespace BDDForNUnit.NUnitPlugin
 {
     [NUnitAddin(Description = "An NUnit plugin which allows Given-When-Then style tests", Name = "BDDForNUnit", Type = ExtensionType.Core)]
     public class BDDAddin : IAddin 

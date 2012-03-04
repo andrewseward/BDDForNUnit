@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BDDForNUnit.Attributes
+namespace BDDForNUnit
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class BDDTestFixtureAttribute : Attribute

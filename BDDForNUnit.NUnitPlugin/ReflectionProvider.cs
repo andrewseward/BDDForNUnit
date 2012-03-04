@@ -2,7 +2,7 @@
 using System.Reflection;
 using NUnit.Core;
 
-namespace BDDForNUnit
+namespace BDDForNUnit.NUnitPlugin
 {
     public class ReflectionProvider : IReflectionProvider
     {
