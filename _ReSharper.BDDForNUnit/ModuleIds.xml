@@ -1,6 +1,0 @@
-<Modules>
-  <Module PersistentId="0E12D365-FF45-453D-B5B5-2D5658003E61" ModuleId="BDDForNUnit.Test" />
-  <Module PersistentId="13F7EBA0-D666-4117-AEF8-0567E1D5E826" ModuleId="BDDForNUnit.Attributes" />
-  <Module PersistentId="FB3EA0A3-137A-4969-88AD-F3EA0853F714" ModuleId="BDDForNUnit" />
-  <Module PersistentId="D9AD20D9-8BE3-4BDD-91DE-00D164A434E5" ModuleId="BDDForNUnit.Example" />
-</Modules>

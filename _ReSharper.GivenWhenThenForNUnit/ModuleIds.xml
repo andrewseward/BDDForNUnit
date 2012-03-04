@@ -1,6 +1,0 @@
-<Modules>
-  <Module PersistentId="FB3EA0A3-137A-4969-88AD-F3EA0853F714" ModuleId="GivenWhenThenForNUnit" />
-  <Module PersistentId="0E12D365-FF45-453D-B5B5-2D5658003E61" ModuleId="GivenWhenThenForNUnit.Test" />
-  <Module PersistentId="5DC3818C-0DB7-4659-99FA-E4DCF4C87BCF" ModuleId="GivenWhenThenForNUnitAttributes" />
-  <Module PersistentId="13F7EBA0-D666-4117-AEF8-0567E1D5E826" ModuleId="GivenWhenThenForNUnit.Attributes" />
-</Modules>

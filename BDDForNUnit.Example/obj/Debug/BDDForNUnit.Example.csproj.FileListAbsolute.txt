@@ -1,9 +1,0 @@
-C:\Dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\BDDForNUnit.Example.dll
-C:\Dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\BDDForNUnit.Example.pdb
-C:\Dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\BDDForNUnit.Attributes.dll
-C:\Dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\nunit.framework.dll
-C:\Dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\BDDForNUnit.Attributes.pdb
-C:\Dev\BDDForNUnit\BDDForNUnit.Example\bin\Debug\nunit.framework.xml
-C:\Dev\BDDForNUnit\BDDForNUnit.Example\obj\Debug\ResolveAssemblyReference.cache
-C:\Dev\BDDForNUnit\BDDForNUnit.Example\obj\Debug\BDDForNUnit.Example.dll
-C:\Dev\BDDForNUnit\BDDForNUnit.Example\obj\Debug\BDDForNUnit.Example.pdb
